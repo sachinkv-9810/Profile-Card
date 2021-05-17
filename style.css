@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+    background-attachment: fixed;
+
+
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* background-color: red; */
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+
+}
+.cart{
+    width: 40px;
+    cursor: pointer;
+    position: relative;
+    right: 0;
+    /* margin-left: 590px; */
+}
+.nav{
+    flex: 1;
+    padding-left: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    /* text-decoration: none; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+.content p{
+    font-size: 20px;
+
+    color: #6a7199;
+
+}
+.content{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(97, 28, 68, 0.15);
+
+}
+.arrow-icons{
+    width: 40px;
+    display: flex;
+}
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+}
+
+.feature-img{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    
+}
+.social-links{
+    transform: rotate(90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+.social-links a{
+    text-decoration: none;
+    color: #6a7199;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+.box{
+    width: 150px;
+    height: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.197);
+    /* background: white; */
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    transform: skew(-0deg);
+}
+.box div{
+    width: 150px;
+    height: 200px;
+}
+.box div img{
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.197);
+    transition: transform .4s;
+}
+.box:hover div img{
+    transform: scale(0.8) translateY(10px);
+}
+.box p{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-family: cursive;
+    transform: translate(-50%, 20px);
+    transition: all .4s;
+}
+.box:hover p{
+    transition-delay: .2s;
+    transform: translate(-50%, -5px);
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: 0;
+}
